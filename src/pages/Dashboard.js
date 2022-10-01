@@ -1,7 +1,8 @@
-const Dashboard = () => {
+const Dashboard = ({user}) => {
+    console.log (user)
   return (
     <section className='section'>
-      <h4>Dashboard</h4>
+      <h4>hello, {user?.name} - your email address is {user?.email}</h4>
     </section>
   );
 };
